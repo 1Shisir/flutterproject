@@ -3,6 +3,7 @@ import 'package:flutterproject/src/constants/sizes.dart';
 import 'package:flutterproject/src/constants/text_strings.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/forgot_password/forgot_password_mail/forgot_password_mail.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/forgot_password/forgot_password_options/forgot_password_btn_widget.dart';
+import 'package:flutterproject/src/features/authenticaton/screens/forgot_password/forgot_password_phone/forgot_password_phone.dart';
 import 'package:get/get.dart';
 
 class ForgetPasswordScreen {
@@ -42,7 +43,10 @@ class ForgetPasswordScreen {
               btnIcon: Icons.mobile_friendly_rounded,
               title: sPhoneno,
               subTitle: sResetViaPhone,
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+                Get.to(const ForgetPasswordPhoneScreen());
+              },
             )
           ],
         ),

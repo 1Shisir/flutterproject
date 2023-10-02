@@ -47,9 +47,9 @@ class LoginForm extends StatelessWidget {
                 onPressed: () {
                   ForgetPasswordScreen.buildShowModalButtomSheet(context);
                 },
-                child: Text(
+                child: const Text(
                   sForgetPassword,
-                  style: Theme.of(context).textTheme.labelLarge,
+                  style: TextStyle(fontSize: 15, color: Colors.blue),
                 )),
           ),
           SizedBox(

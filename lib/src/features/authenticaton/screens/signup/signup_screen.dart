@@ -3,7 +3,9 @@ import 'package:flutterproject/src/common_widgets/form/form_header_widget.dart';
 import 'package:flutterproject/src/constants/image_string.dart';
 import 'package:flutterproject/src/constants/sizes.dart';
 import 'package:flutterproject/src/constants/text_strings.dart';
+import 'package:flutterproject/src/features/authenticaton/screens/login/login_screen.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/signup/widgets/signup_for_widget.dart';
+import 'package:get/get.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -37,7 +39,9 @@ class SignUpScreen extends StatelessWidget {
                       ),
                     ),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.to(const LoginScreen());
+                        },
                         child: Text.rich(TextSpan(children: [
                           TextSpan(
                               text: sAlreadyUser,
