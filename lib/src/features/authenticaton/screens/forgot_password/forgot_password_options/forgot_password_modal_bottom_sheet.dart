@@ -33,7 +33,7 @@ class ForgetPasswordScreen {
               subTitle: sResetViaEmail,
               onTap: () {
                 Navigator.pop(context);
-                Get.to(const ForgetPasswordMailScreen());
+                Get.to(() => const ForgetPasswordMailScreen());
               },
             ),
             const SizedBox(
@@ -45,7 +45,7 @@ class ForgetPasswordScreen {
               subTitle: sResetViaPhone,
               onTap: () {
                 Navigator.pop(context);
-                Get.to(const ForgetPasswordPhoneScreen());
+                Get.to(() => const ForgetPasswordPhoneScreen());
               },
             )
           ],

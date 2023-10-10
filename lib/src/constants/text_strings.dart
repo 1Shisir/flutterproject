@@ -48,3 +48,19 @@ const String sForgetEmailSubTitle =
 const String sOtpTitle = "CO\nDE";
 const String sOtpSubtitle = "Verification";
 const String sOtpMessage = "Enter verification the code sent at ";
+
+const String sProfile = "Profile";
+const String sEditProfile = "Edit Profile";
+const String sLogout = "Logout";
+const String sProfileHeading = "Non-Coders";
+const String sProfileSubHeading = "Jagdis@Co-der";
+
+const String sMenu1 = "Settings";
+const String sMenu4 = "Information";
+const String sMenu2 = "Billing Details";
+const String sMenu3 = "User Agreement";
+const String sMenu5 = sLogout;
+
+const String sDelete = "Delete";
+const String sJoined = "Joined  ";
+const String sJoinedAt = "dd/mm/yyyy";

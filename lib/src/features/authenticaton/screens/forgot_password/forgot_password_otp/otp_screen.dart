@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:flutterproject/src/constants/sizes.dart';
 import 'package:flutterproject/src/constants/text_strings.dart';
+import 'package:flutterproject/src/features/authenticaton/screens/user_profile/user_profile.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class OTPScreen extends StatelessWidget {
@@ -48,8 +50,11 @@ class OTPScreen extends StatelessWidget {
             ),
             SizedBox(
                 width: double.infinity,
-                child:
-                    ElevatedButton(onPressed: () {}, child: const Text(sNext))),
+                child: ElevatedButton(
+                    onPressed: () {
+                      Get.to(() => const ProfileScreen());
+                    },
+                    child: const Text(sNext))),
           ],
         ),
       ),
