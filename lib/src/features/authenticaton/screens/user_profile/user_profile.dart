@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterproject/src/constants/colors.dart';
+import 'package:flutterproject/src/constants/image_string.dart';
 import 'package:flutterproject/src/constants/text_strings.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/user_profile/update_profile.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/user_profile/widgets/profile_menu.dart';
@@ -40,10 +41,10 @@ class ProfileScreen extends StatelessWidget {
                   width: 120,
                   height: 120,
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(100),
-                    child: Image.network(
-                        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
-                  ),
+                      borderRadius: BorderRadius.circular(100),
+                      child: const Image(
+                        image: AssetImage(sForgetImage),
+                      )),
                 ),
                 Positioned(
                   bottom: 0,

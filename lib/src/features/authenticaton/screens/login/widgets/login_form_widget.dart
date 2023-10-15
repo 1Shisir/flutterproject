@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterproject/homescreen_menu.dart';
 import 'package:flutterproject/src/constants/text_strings.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/forgot_password/forgot_password_options/forgot_password_modal_bottom_sheet.dart';
+import 'package:get/get.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -55,7 +57,10 @@ class LoginForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () {}, child: Text(sLogin.toUpperCase())),
+                onPressed: () {
+                  Get.to(() => const NavigationMenu());
+                },
+                child: Text(sLogin.toUpperCase())),
           ),
         ],
       ),
