@@ -18,7 +18,7 @@ class WelcomePage extends StatelessWidget {
     final isDarkMode = brightness == Brightness.dark;
 
     return Scaffold(
-        backgroundColor: isDarkMode ? sSecondaryColor : sPrimaryColor,
+        backgroundColor: isDarkMode ? sSecondaryColor : sWhiteColor,
         body: Container(
           padding: const EdgeInsets.all(sDefaultSize),
           child: Column(
@@ -44,7 +44,9 @@ class WelcomePage extends StatelessWidget {
                 children: [
                   Expanded(
                     child: OutlinedButton(
-                      onPressed: () => Get.to(() => const LoginScreen()),
+                      onPressed: () {
+                        Get.to(() => const LoginScreen());
+                      },
                       child: Text(sLogin.toUpperCase()),
                     ),
                   ),

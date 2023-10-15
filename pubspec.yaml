@@ -36,12 +36,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^5.1.0
-  # flutter_native_splash: ^2.3.2
   get: ^4.6.5
   liquid_swipe: ^3.1.0
   smooth_page_indicator: ^1.1.0
   flutter_otp_text_field: ^1.1.1
   firebase_core: ^2.16.0
+  iconsax: ^0.0.8
 
 
 dev_dependencies:
