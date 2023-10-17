@@ -42,6 +42,7 @@ dependencies:
   flutter_otp_text_field: ^1.1.1
   firebase_core: ^2.16.0
   iconsax: ^0.0.8
+  firebase_auth: ^4.10.1
 
 
 dev_dependencies:

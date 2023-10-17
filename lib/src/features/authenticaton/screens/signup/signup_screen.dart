@@ -4,7 +4,7 @@ import 'package:flutterproject/src/constants/image_string.dart';
 import 'package:flutterproject/src/constants/sizes.dart';
 import 'package:flutterproject/src/constants/text_strings.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/login/login_screen.dart';
-import 'package:flutterproject/src/features/authenticaton/screens/signup/widgets/signup_for_widget.dart';
+import 'package:flutterproject/src/features/authenticaton/screens/signup/widgets/signup_form_widget.dart';
 import 'package:get/get.dart';
 
 class SignUpScreen extends StatelessWidget {
