@@ -4,6 +4,7 @@ import 'package:flutterproject/src/constants/image_string.dart';
 import 'package:flutterproject/src/constants/text_strings.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/user_profile/update_profile.dart';
 import 'package:flutterproject/src/features/authenticaton/screens/user_profile/widgets/profile_menu.dart';
+import 'package:flutterproject/src/repository/authentication_repository/authentication_repository.dart';
 import 'package:get/get.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -125,7 +126,9 @@ class ProfileScreen extends StatelessWidget {
                 icon: Icons.logout_outlined,
                 textColor: Colors.red,
                 endIcon: false,
-                onPress: () {},
+                onPress: () {
+                  AuthenticationRepository.instance.logout();
+                },
               ),
             ],
           ),
